@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-nqbb
+  namespace: mvp-demo-dev-namespace-oehz-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:fd74747dfa3bdfe7a3c48b58477a45408ac6b3614364fd7d7b14aec4fe6e128f
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
